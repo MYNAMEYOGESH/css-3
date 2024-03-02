@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: grid;
+            height: 100vh;
+            gap: 10px;
+            grid-template-areas: "topr topr topr" "le cen rgt" "foot foot foot";
+            grid-template-columns: 10vw 1fr 10vw;
+            grid-template-rows: 10vh 1fr 10vh;
+        }
+
+        .top-row, .left, .center, .right, .foot {
+            background-color: rebeccapurple;
+            color: #fff;
+            font-size: 1.2em;
+        }
+        .foot {
+            grid-area: foot;
+        }
+        .top-row {
+            grid-area: topr;
+        }
+        .left {
+            grid-area: le;
+        }
+        .center {
+            grid-area: cen;
+        }
+        .right {
+            grid-area: rgt;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <header class="top-row">
+           <h1> header</h1>
+        </header>
+
+        <aside class="left">
+            left
+        </aside>
+
+        <div class="center">
+            <h1>center</h1>
+        </div>
+
+        <aside class="right">
+            right sidebar
+        </aside>
+
+        <footer class="foot">
+            <p>All Rights Responed</p>
+        </footer>
+    </section>
+</body>
+</html>

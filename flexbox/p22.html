@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .contaier {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: grid;
+            grid-gap: 2px;
+            grid-template-columns: repeat(19,1fr);
+            grid-template-rows: repeat(6,1fr);
+        }
+
+        .contaier > div {
+            background-color: #444;
+            border-radius: 10px;
+            color: #eee;
+            font-size: 1em;
+            padding: 1.2em;
+            cursor: pointer;
+        }
+ 
+        .contaier div:nth-child(55),
+        .contaier div:nth-child(87)
+         {
+            grid-row: span 2;
+        }
+
+        .contaier div:nth-child(92) {
+            grid-column: span 5;
+        }
+
+        .contaier div:nth-child(33),
+        .contaier div:nth-child(38),
+        .contaier div:nth-child(56),
+        .contaier div:nth-child(68),
+        .contaier div:nth-child(72),
+        .contaier div:nth-child(96),
+        .contaier div:nth-child(98)
+        {
+            grid-column: span 2;
+        } 
+        .contaier div:nth-child(83) {
+            grid-column: span 3;
+        }
+        
+    </style>
+</head>
+<body>
+ 
+   <div class="contaier">
+
+    <div>esc</div>
+    <div>f1</div>
+    <div>f2</div>
+    <div>f3</div>
+    <div>f4</div>
+    <div>f5</div>
+    <div>f6</div>
+    <div>f7</div>
+    <div>f8</div>
+    <div>f9</div>
+    <div>10</div>
+    <div>f11</div>
+    <div>12</div>
+    <div>insert</div>
+    <div>delete</div>
+    <div><a href=""><i class="fa-sharp fa-solid fa-calculator" style="color: #eee;"></i></a></div>
+    <div>CE</div>
+    <div>+/-</div>
+    <div></div>
+    <div>~<br>`</div>
+    <div>! <br>1</div>
+    <div>@ <br>2</div>
+    <div># <br>3</div>
+    <div>$ <br>4</div>
+    <div> % <br> 5</div>
+    <div> ^ <br>6</div>
+    <div>& <br>7</div>
+    <div>* <br>8</div>
+    <div>(<br>9</div>
+    <div>) <br>0</div>
+    <div>_ <br>-</div>
+    <div>+ <br>=</div>
+    <div>backspace</div>
+    <div>num <br>lock</div>
+    <div>/</div>
+    <div>*</div>
+    <div>-</div>
+    <div>tab</div>
+    <div>Q</div>
+    <div>W</div>
+    <div>E</div>
+    <div>R</div>
+    <div>T</div>
+    <div>Y</div>
+    <div>U</div>
+    <div>I</div>
+    <div>O</div>
+    <div>P</div>
+    <div>{ <br> [</div>
+    <div>} <br> ]</div>
+    <div>| <br>\</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>+</div>
+    <div>caps lock</div><!-- 56 -->
+    <div>A</div>
+    <div>S</div>
+    <div>D</div>
+    <div>F</div>
+    <div>G</div>
+    <div>H</div>
+    <div>J</div>
+    <div>K</div>
+    <div>L</div>
+    <div>: <br>;</div>
+    <div>" <br>'</div>
+    <div>enter</div><!-- 68 -->
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>shift</div>
+    <div>Z</div>
+    <div>X</div>
+    <div>C</div>
+    <div>V</div>
+    <div>B</div>
+    <div>N</div>
+    <div>M</div>
+    <div>< <br>,</div>
+    <div>> <br>.</div>
+    <div>? <br>/</div>
+    <div>shift</div><!-- 83 -->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>enter</div><!-- 87 -->
+    <div>ctrl</div>
+    <div>fn</div>
+    <div><a href="#"><i class="fa-brands fa-windows" style="color: #eee;"></i></i></a></div>
+    <div>alt</div>
+    <div></div>
+    <div>alt</div>
+    <div>ctrl</div>
+    <div><</div>
+    <div>^<hr>v</div>
+    <div>></div>
+    <div>0</div>
+    <div>.</div>
+   </div>
+</body>
+</html>

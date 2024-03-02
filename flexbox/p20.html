@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+           
+        }
+
+        .contaier {
+    
+            display: grid;
+            grid-template-columns: repeat(auto-fill,1fr);
+            grid-template-rows: repeat(auto-fill,1fr);
+        
+   }
+
+     .contaier  img {
+        width: 100%;
+        
+        }
+
+    .contaier div:nth-child(5)
+        {
+            grid-row-start:1;
+            grid-row-end: span 2;
+            grid-column-start: 2;
+            grid-column-end: span 2;
+        } 
+        @media screen and (max-width:768px) {
+            .contaier {
+                grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(auto-fill,1fr);
+
+            }
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="contaier">
+       <div> <img src="./images/1.jpg" alt=""></div>
+       <div> <img src="./images/2.jpg" alt=""></div>
+       <div><img src="./images/3.jpg" alt=""></div>
+        <div><img src="./images/4.jpg" alt=""></div>
+        <div><img src="./images/bf82f6956a32819af48c2572243e8286.jpg" alt=""> </div>
+        <div><img src="./images/baby-groot-4k-hd-superheroes-wallpaper-preview.jpg" alt=""></div>
+         <div><img src="./images/panel2.jpeg" alt=""></div>
+        <div><img src="./images/panel1.jpeg" alt=""></div>
+        <div><img src="./images/panel3.jpg" alt=""></div>
+    </div>
+</body>
+</html>

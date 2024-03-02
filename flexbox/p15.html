@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .content-form {
+            border: 2px solid#222;
+            padding: 10px;
+            display: grid;
+            width: 50vw;
+            margin: auto;
+            gap: 10px;
+            grid-template-columns: [col1] auto [col2] 1fr; 
+        }
+
+        .content-form label {
+            grid-column: col1;
+            grid-row: auto;
+        }
+
+        .content-form input {
+            grid-column: col2;
+            grid-row: auto;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        .content-form button {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Grid From</h1>
+
+    <form action="#" class="content-form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="Email" id="email" required>
+
+        <label for="pass">password</label>
+        <input type="password" name="pass" id="pass" required>
+
+       <button>Send Me</button>
+    </form>
+</body>
+</html>

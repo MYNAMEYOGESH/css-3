@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            position: absolute;
+        /*   animation: name duration timing-function delay iteration-count direction fill-mode;*/
+            animation: anim1 10s;/* short hand property */
+
+            }
+
+            /* keyframes are the block of the animations  */
+          /*   @keyframes name {
+                code
+
+                indidvual animation property
+
+                animation-name => name of the keyframes
+                animation-duration => time duration to complete one cycle of animation-duration
+                animation-timing-function => built in names (cubic_bazier())
+                animation-delay => time delay to start next cycle of animation
+                animation-iteration-count => number of cycles
+                animation-direction => clock wise or anty clock wise
+                animation-fill-mode => built in names
+                 */
+            @keyframes anim1 {
+                /* starting point */
+                from {
+                    background-color: orangered;
+                    top: 0;
+                    left: 0;
+                }
+                /* ending point */
+                to {
+                    background-color: orange;
+                    top: 0;
+                    left: 100%;
+                }
+            }
+    </style>
+</head>
+<body>
+    <h1>keyframes</h1>
+    <div class="b1"></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .title {
+            font-size: 6rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-align: center;
+            /* color:transparent; */
+            color: #f35626;
+            background-image: linear-gradient(92deg,#f35626,#feab3a);
+            /* background-image:url('https://picsum.photo/1200/800'); */
+             -webkit-background-clip: text; /* !important line :)*/
+            -webkit-text-fill-color: transparent;
+            animation: txt 10s linear infinite;
+        }
+        @keyframes txt {
+            from {
+                filter: hue-rotate(0deg);
+                -webkit-filter: hue-rotate(0deg);
+            }
+            to {
+                filter: hue-rotate(-360deg);
+                -webkit-filter: hue-rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Text Animation</strong></h1>
+
+    <div class="container">
+        <h1 class="title">Welcome to Css, this is text animation.</h1>
+    </div>
+</body>
+</html>

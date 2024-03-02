@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            
+        }
+        .continer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+         
+        .card {
+            width: 400px;
+            border: 3px solid black;
+           
+        }
+
+        .card .image img {
+            max-width: 100%;
+            
+        }
+
+        .card .icons {
+          
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 40px;
+            gap: 2px;
+            position: relative;
+            right: 0;
+            bottom: 5px;
+            transform: translateX(140px);
+            opacity: 0;
+            transition: transform 3s ease-in;
+           
+        }
+
+        .content {
+            background-color: #faebd77c;
+            text-align: center;
+        }
+
+        .image .icons span {
+            background-color: blue;
+            color: aliceblue;
+            cursor: pointer;
+            padding: 10px;
+          
+            
+        }
+
+        .icons span:hover {
+            background-color: black;
+        }
+
+        .card:hover .icons {
+            transform: translateX(0px);
+            opacity: 1;
+            animation: slide 2s linear;
+
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(150px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="continer">
+        <div class="card">
+            <div class="image">
+              <img src="https://picsum.photos//id/421/820/500" alt="">
+                <div class="icons">
+                    <span>cart</span>
+                    <span>likes</span>
+                </div>
+            </div>
+            <div class="content">
+                <h4>title</h4>
+                <p>price = &#8377; 1200</p>
+             </div>
+         </div>
+         
+    </div>
+</body>
+</html>

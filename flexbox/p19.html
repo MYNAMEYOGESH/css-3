@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+           
+        }
+
+        .contaier {
+          /*   position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+            display: grid;
+            gap: 10px;
+           
+            grid-template-columns: repeat(4,1fr);
+           grid-template-rows: repeat(3,1fr); 
+   }
+
+        .contaier > div {
+            background-color: teal;
+            border-radius: 10px;
+            color: #eee;
+            font-size: 3em;
+            padding: 1em;
+            cursor: pointer;
+        }
+
+        .contaier div:nth-child(5)
+        {
+            grid-row-start:1;
+            grid-row-end: span 2;
+            grid-column-start: 2;
+            grid-column-end: span 2;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="contaier">
+        <div>1 </div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5 </div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>

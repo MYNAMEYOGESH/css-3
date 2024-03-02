@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .blk1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tooltip {
+            background-color: slateblue;
+            color: #fff;
+            padding: 12px 14px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.4s ease;
+        }
+
+        .tooltip .tool-tip-text {
+            position: absolute;
+            width: 122px;
+            padding: 6px 8px;
+            background-color: #222;
+            color: #fff;
+            z-index: 1;
+            top: 0;
+            left: -140px;
+            visibility: hidden;
+            opacity: 0;/* fade out */
+            transition: all 5s ease;
+
+        }
+
+        .tool-tip-text::after {
+            content: "";
+            position: absolute;
+            bottom: 30%;
+            left: 100%;
+            border-width: 6px;
+            border-style: solid;
+            border-left-color: orangered;
+        }
+
+
+
+        .tooltip:hover .tool-tip-text {
+            visibility: visible;
+            opacity: 1;/* fadein */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>tooltips examples</h1>
+    <section class="blk1">
+        <div class="tooltip"> hover on me
+            <span class="tool-tip-text">creat new file</span>
+        </div>
+    </section>
+</body>
+</html>
